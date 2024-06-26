@@ -6,12 +6,17 @@
 /*   By: jeongwpa <jeongwpa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/05 18:48:57 by jeongwpa          #+#    #+#             */
-/*   Updated: 2024/01/11 14:53:18 by jeongwpa         ###   ########.fr       */
+/*   Updated: 2024/06/26 15:13:14 by jeongwpa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
+
+# ifdef __cplusplus
+extern "C" {
+# endif
+
 # include "ft_type.h"
 # include <stdlib.h>
 
@@ -44,5 +49,9 @@ void	ft_lstdelone(t_list *lst, void (*del)(void *));
 void	ft_lstclear(t_list **lst, void (*del)(void *));
 void	ft_lstiter(t_list *lst, void (*f)(void *));
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));
+
+# ifdef __cplusplus
+}
+# endif
 
 #endif

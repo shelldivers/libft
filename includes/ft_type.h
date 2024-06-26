@@ -6,12 +6,17 @@
 /*   By: jeongwpa <jeongwpa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/11 14:53:21 by jeongwpa          #+#    #+#             */
-/*   Updated: 2024/01/11 14:53:21 by jeongwpa         ###   ########.fr       */
+/*   Updated: 2024/06/26 15:12:47 by jeongwpa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef FT_TYPE_H
 # define FT_TYPE_H
+
+# ifdef __cplusplus
+extern "C" {
+# endif
+
 # include "ft_bool.h"
 
 typedef unsigned int		t_uint;
@@ -70,5 +75,9 @@ typedef struct s_fmt
 	int				raw_len;
 	struct s_pflag	flag;
 }	t_fmt;
+
+# ifdef __cplusplus
+}
+# endif
 
 #endif

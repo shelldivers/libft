@@ -6,12 +6,17 @@
 /*   By: jeongwpa <jeongwpa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/30 11:26:58 by jeongwpa          #+#    #+#             */
-/*   Updated: 2024/01/11 14:52:59 by jeongwpa         ###   ########.fr       */
+/*   Updated: 2024/06/26 15:12:37 by jeongwpa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef FT_PRINTF_H
 # define FT_PRINTF_H
+
+# ifdef __cplusplus
+extern "C" {
+# endif
+
 # define BUFFER_SIZE 512
 # include "ft_bool.h"
 # include "ft_type.h"
@@ -58,5 +63,9 @@ t_fmt	*parse_hex(t_fmt *fmt, unsigned int arg, const char hex[17]);
 void	strs_add_back(t_strs **lst, t_strs *new_node);
 void	strs_clear(t_strs **lst);
 t_strs	*strs_new(char *content, int size);
+
+# ifdef __cplusplus
+}
+# endif
 
 #endif

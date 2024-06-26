@@ -6,8 +6,7 @@ set(NAME libft)
 project(${NAME} C CXX)
 
 file(GLOB_RECURSE SRC_FILES "srcs/*.c")
-file(GLOB_RECURSE INCLUDE_FILES "includes/*.h")
 
-add_library(${NAME} STATIC ${SRC_FILES} ${INCLUDE_FILES})
+add_library(${NAME} STATIC ${SRC_FILES})
 
 include_directories(${CMAKE_CURRENT_SOURCE_DIR}/includes)

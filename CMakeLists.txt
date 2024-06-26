@@ -10,4 +10,4 @@ file(GLOB INC_FILES "includes/*.h")
 
 add_library(${NAME} STATIC ${SRC_FILES} ${INC_FILES})
 
-target_link_directories(${NAME} PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/includes)
+include_directories(${CMAKE_CURRENT_SOURCE_DIR}/includes)

@@ -6,16 +6,12 @@
 /*   By: jeongwpa <jeongwpa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/19 20:06:49 by jeongwpa          #+#    #+#             */
-/*   Updated: 2024/06/26 15:13:04 by jeongwpa         ###   ########.fr       */
+/*   Updated: 2024/07/22 09:43:15 by jeongwpa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef GET_NEXT_LINE_H
 # define GET_NEXT_LINE_H
-
-# ifdef __cplusplus
-extern "C" {
-# endif
 
 # ifndef BUFFER_SIZE
 #  define BUFFER_SIZE 512
@@ -37,9 +33,5 @@ char	*get_next_line(int fd);
 char	*ft_content_sub(t_gnl *node, unsigned int start, long len);
 long	read_content_heap(t_gnl *node);
 long	read_content_stack(t_gnl *node);
-
-# ifdef __cplusplus
-}
-# endif
 
 #endif

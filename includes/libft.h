@@ -6,7 +6,7 @@
 /*   By: jeongwpa <jeongwpa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/05 18:48:57 by jeongwpa          #+#    #+#             */
-/*   Updated: 2024/07/26 00:49:16 by jeongwpa         ###   ########.fr       */
+/*   Updated: 2024/07/26 02:41:00 by jeongwpa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ int		ft_isnumeric(char *str);
 void	*ft_memcpy(void *dst, const void *src, size_t n);
 void	*ft_memset(void *b, int c, size_t len);
 void	*ft_memmove(void *dst, const void *src, size_t len);
-void	*ft_realloc(void *ptr, size_t size);
+void	*ft_realloc(void *ptr, size_t old_size, size_t new_size);
 size_t	ft_strlen(const char *s);
 char	*ft_strndup(char const *str, size_t len);
 void	ft_strncpy(void *dst, const void *src, size_t n);

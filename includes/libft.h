@@ -24,7 +24,6 @@ int		ft_isnumeric(char *str);
 void	*ft_memcpy(void *dst, const void *src, size_t n);
 void	*ft_memset(void *b, int c, size_t len);
 void	*ft_memmove(void *dst, const void *src, size_t len);
-void	*ft_realloc(void *ptr, size_t old_size, size_t new_size);
 size_t	ft_strlen(const char *s);
 char	*ft_strndup(char const *str, size_t len);
 void	ft_strncpy(void *dst, const void *src, size_t n);

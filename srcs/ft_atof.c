@@ -24,7 +24,7 @@ float	ft_atof(const char *str)
 	ac = 0.0;
 	while (ft_isspace(*str))
 		str++;
-	n_flag = get_n_flag(*str);
+	n_flag = get_n_flag(*str++);
 	while (ft_isdigit(*str))
 		ac = ac * 10.0 + (*str++ - '0') * n_flag;
 	if (*str == '.')

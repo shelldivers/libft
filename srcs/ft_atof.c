@@ -12,14 +12,14 @@
 
 #include "libft.h"
 
-static float	ft_powf(int n);
-static float	get_n_flag(char c);
+static double	ft_powf(int n);
+static double	get_n_flag(char c);
 
 float	ft_atof(const char *str)
 {
-	float	ac;
-	float	n_flag;
-	int		decimal;
+	double	ac;
+	double	n_flag;
+	double	decimal;
 
 	ac = 0.0;
 	while (ft_isspace(*str))
@@ -33,22 +33,22 @@ float	ft_atof(const char *str)
 	while (ft_isdigit(*str))
 	{
 		ac = ac * 10.0 + (*str++ - '0') * n_flag;
-		decimal++;
+		decimal += 1.0;
 	}
 	ac /= ft_powf(decimal);
 	return (ac);
 }
 
-float	get_n_flag(char c)
+double	get_n_flag(char c)
 {
 	if (c == '-')
 		return (-1.0);
 	return (1.0);
 }
 
-static float	ft_powf(int n)
+static double	ft_powf(int n)
 {
-	float	ret;
+	double	ret;
 
 	ret = 1.0;
 	while (n--)
